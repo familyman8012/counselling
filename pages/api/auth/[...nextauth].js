@@ -2,8 +2,6 @@ import NextAuth from "next-auth";
 import Providers from "next-auth/providers";
 import axios from "axios";
 
-require("mongodb");
-
 const options = {
   providers: [
     Providers.Kakao({
