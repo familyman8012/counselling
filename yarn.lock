@@ -3694,6 +3694,11 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
 
+hdb-pool@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/hdb-pool/-/hdb-pool-0.1.6.tgz#75fe7b90f98b25e301fc8b6693a62ef2c37c2842"
+  integrity sha512-8VZOLn1EHamm1NmTFQj2iqjVcfonYIsD7F5DU2bz2N+gF+knp6/MbAVeRXkJtya717IBkPeA5iv0/1iPuYo4ZA==
+
 he@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"

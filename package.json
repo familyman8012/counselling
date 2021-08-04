@@ -16,6 +16,7 @@
     "axios": "^0.21.1",
     "bootpay-js": "^3.3.3",
     "classnames": "^2.3.1",
+    "hdb-pool": "^0.1.6",
     "mongodb-client-encryption": "^1.2.6",
     "mongoose": "^5.13.2",
     "next": "11.0.1",
