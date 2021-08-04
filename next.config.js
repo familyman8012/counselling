@@ -1,3 +1,4 @@
+const FilterWarningsPlugin = require("webpack-filter-warnings-plugin");
 module.exports = {
   reactStrictMode: true,
   target: "serverless",
