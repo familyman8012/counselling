@@ -10,8 +10,6 @@ function Bbswrite() {
   const router = useRouter();
   const { category, p_id } = router.query;
 
-  console.log("p_id", p_id);
-
   useEffect(() => {
     if (session === null || category === undefined) {
       router.back();

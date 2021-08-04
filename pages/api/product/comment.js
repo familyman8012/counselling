@@ -11,7 +11,6 @@ handler.get(async (req, res) => {
 
 handler.post(async (req, res) => {
   var comments = new Comment(req.body);
-  console.log("req.body111", req.body);
   try {
     const result = await comments.save();
     const usersItem = await User.updateOne(

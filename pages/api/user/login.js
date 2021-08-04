@@ -13,7 +13,6 @@ handler.post(async (req, res) => {
   var t = req.body.email;
   const getSalt = await User.find({ email: t }, { _id: false, salt: true });
 
-  console.log("getSalt는", getSalt.length);
   if (getSalt.length === 0) {
     return res
       .status(200)

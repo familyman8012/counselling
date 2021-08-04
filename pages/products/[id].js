@@ -33,7 +33,6 @@ const Product = () => {
   );
   const dispatch = useDispatch();
 
-  console.log("priceItem", priceItem);
   const { id } = router.query;
 
   useEffect(() => {

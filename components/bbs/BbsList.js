@@ -31,7 +31,6 @@ function BbsList({ swrdata, category }) {
         (currentPage - 1) * pageSize <= index && index < currentPage * pageSize
     );
   }
-  console.log(swrdataList);
   // const swrdataList = swrdata?.filter(
   //   (_, index) =>
   //     (currentPage - 1) * pageSize + 1 <= index &&
@@ -72,7 +71,6 @@ function BbsList({ swrdata, category }) {
             <span className="time">작성시간</span>
           </li>
           {swrdataList?.map((x, i) => {
-            console.log("x는", x);
             return (
               <li key={x._id} onClick={() => detailMove(x._id, x.userid)}>
                 <span className="no">

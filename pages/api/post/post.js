@@ -21,7 +21,6 @@ handler.get(async (req, res) => {
 
 handler.post(async (req, res) => {
   var posts = new Post(req.body);
-  console.log("req.body111", req.body);
   try {
     const result = await posts.save();
     const usersItem = await User.updateOne(
@@ -36,9 +35,7 @@ handler.post(async (req, res) => {
 });
 
 handler.put(async (req, res) => {
-  console.log("req.body", req.body);
   const { p_id, username, title, cont } = req.body;
-  console.log("cont cont", cont);
   const modifyResult = await Post.update(
     { _id: p_id },
     {

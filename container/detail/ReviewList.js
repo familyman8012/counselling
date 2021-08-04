@@ -57,13 +57,6 @@ export default function ReviewList() {
     [name, content, id]
   );
 
-  console.log("swrdata", swrdata);
-
-  // var categoryData = swrdata.filter(function (el) {
-  //   return el.content == "테스트중입니다2";
-  // });
-  // console.log(categoryData);
-
   // crud
   const deleteItem = useCallback(
     (id) => {
@@ -78,7 +71,6 @@ export default function ReviewList() {
     [swrdata]
   );
 
-  console.log("session", session ? true : false);
   const writeItem = useCallback(() => {
     session
       ? setOpenModal(true)
@@ -94,7 +86,6 @@ export default function ReviewList() {
       <button onClick={writeItem}>구매평 작성</button>
       <ul className="wrap_review_list">
         {swrdataList?.map((x, i) => {
-          console.log("x느느느느는", x);
           return (
             <li
               key={x._id}

@@ -11,7 +11,6 @@ const handler = createHandler();
 
 handler.post(async (req, res) => {
   var payments = new Payment(req.body);
-  console.log("payments느느느는", payments);
   try {
     const result = await payments.save();
     const usersItem = await User.updateOne(

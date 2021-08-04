@@ -20,15 +20,12 @@ const options = {
         userpwd: { label: "password", type: "password" },
       },
       async authorize(credentials, req) {
-        console.log(credentials);
-
         const response = await axios.post(
           "http://localhost:3000/api/user/login",
           credentials
         );
         var t = response.data;
         if (t.data.status !== 0) {
-          console.log("t는", t, "t phone", t.data.phone);
           const user = {
             uid: t.data._id,
             name: t.data.name,
@@ -54,7 +51,6 @@ const options = {
       return Promise.resolve(token);
     },
     session: async (session, user) => {
-      console.log("session", session, "user", user);
       session.user = user;
       session.user = user.user;
       session.user.uid ? session.user.uid : (session.user.uid = user.user.id);

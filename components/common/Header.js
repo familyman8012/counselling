@@ -6,8 +6,6 @@ import { signIn, signOut, useSession } from "next-auth/client";
 function Header() {
   const [session, loading] = useSession();
 
-  console.log("session에는 뭐가 들었을까?", session);
-
   return (
     <header className="wrapp-header">
       <div className="header-box-01">

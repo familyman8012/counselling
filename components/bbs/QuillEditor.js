@@ -116,7 +116,6 @@ const QuillEditor = (props) => {
 
   //게시판 카테고리정보
   const { p_id, category } = props;
-  console.log("p_id는는", p_id);
 
   // 타이틀 설정
   const [title, setTitle] = useState(
@@ -134,8 +133,6 @@ const QuillEditor = (props) => {
 
   // 작성내용
   const [modCont, setModCont] = useState("");
-
-  console.log("modCont", modCont);
 
   //useRouter
   const router = useRouter();
@@ -184,7 +181,6 @@ const QuillEditor = (props) => {
   const ModifyItem = (p_id) => {
     // quill 에디터에서 작성한 값을 cont에 저장
     const cont = quillInstance.current.root.innerHTML;
-    console.log("cont cont", cont);
 
     //작성자, 제목을 입력해야함.
     if (

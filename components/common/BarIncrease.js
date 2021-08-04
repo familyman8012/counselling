@@ -2,7 +2,6 @@ import React from "react";
 import cn from "classnames";
 
 function BarIncrease({ item, baron }) {
-  console.log(item.title, baron);
   return (
     <li className="skill_li skill_li-in">
       <h6 className="skill-title">{item.title}</h6>

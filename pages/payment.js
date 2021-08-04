@@ -87,7 +87,6 @@ function Payment() {
         //주의 - 카드 수기결제일 경우 이 부분이 실행되지 않습니다.
         console.log(data);
 
-        console.log("data.receipt_id", data.receipt_id);
         var t = { price: payOption.price, receipt_id: data.receipt_id };
 
         axios.post("/api/pay/payverify", t).then((response) => {
@@ -100,8 +99,6 @@ function Payment() {
             setpayComplete(true);
             axios.post("/api/payment/payment", variables);
             BootPay.transactionConfirm(data);
-
-            console.log("confirm", data);
           } else {
             BootPay.removePaymentWindow();
           }
@@ -114,11 +111,8 @@ function Payment() {
       .done(function (data) {
         //결제가 정상적으로 완료되면 수행됩니다
         //비즈니스 로직을 수행하기 전에 결제 유효성 검증을 하시길 추천합니다.
-        console.log("doneData", data);
       });
   }
-
-  console.log("completeData", completeData);
 
   const { item_name, order_id, payment_data } = completeData?.data;
 

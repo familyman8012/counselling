@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 function ServiceItem({ item }) {
-  console.log("item", item);
   const { title, text, link, imgUrl, alt } = item;
   return (
     <div className="col-sm-3 col-md-3 col-lg-3">

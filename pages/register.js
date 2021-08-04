@@ -29,7 +29,6 @@ export default function Register({ providers, csrfToken }) {
 
   const onSumit = async (data) => {
     setLoading(true);
-    console.log(data);
     const { email, name, userpwd, phone } = data;
     try {
       const response = await axios.post("/api/user/user", {
@@ -38,7 +37,6 @@ export default function Register({ providers, csrfToken }) {
         userpwd,
         phone,
       });
-      console.log("response response", response);
       if (response.statusText === "OK") {
         router.push("/");
       }

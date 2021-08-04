@@ -3,9 +3,7 @@ class ChannelService {
     //this.loadScript();
   }
 
-  componentWillMount() {
-    console.log("window.innerHeight", window.innerHeight);
-  }
+  componentWillMount() {}
 
   // loadScript() {
   //   var w = window;
