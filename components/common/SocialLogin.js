@@ -27,7 +27,7 @@ export default function SocialLogin({ providers, csrfToken }) {
         };
         const providerName = providerList();
         return (
-          <div className="box_login_social">
+          <div key={provider.name} className="box_login_social">
             <button
               className={provider.name}
               onClick={() =>
@@ -36,7 +36,9 @@ export default function SocialLogin({ providers, csrfToken }) {
                 })
               }
             >
-              <span class="btn_inner">{providerName}로 1초 만에 로그인</span>
+              <span className="btn_inner">
+                {providerName}로 1초 만에 로그인
+              </span>
             </button>
           </div>
         );

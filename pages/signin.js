@@ -21,7 +21,7 @@ export default function SignIn({ providers, csrfToken }) {
             <form method="post" action="/api/auth/callback/credentials">
               <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
               <label>
-                <div class="tit">이메일</div>
+                <div className="tit">이메일</div>
                 <div>
                   <input
                     name="email"
@@ -31,7 +31,7 @@ export default function SignIn({ providers, csrfToken }) {
                 </div>
               </label>
               <label>
-                <div class="tit">비밀번호</div>
+                <div className="tit">비밀번호</div>
                 <div>
                   <input
                     name="userpwd"

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import QuillEditor from "../../components/bbs/QuillEditor";
 import { useSession } from "next-auth/client";
 
-function bbswrite() {
+function Bbswrite() {
   // session
   const [session] = useSession();
   //useRouter
@@ -24,4 +24,4 @@ function bbswrite() {
   }
 }
 
-export default bbswrite;
+export default Bbswrite;

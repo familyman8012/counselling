@@ -5,13 +5,13 @@ import { loadDetail, priceSelect, onisModal } from "../../redux/productSlice";
 import ReviewList from "../../container/detail/ReviewList";
 import { useSession } from "next-auth/client";
 
-const PriceItem = React.memo(({ priceItem }) => {
+const PriceItem = ({ priceItem }) => {
   const dispatch = useDispatch();
   return (
     <>
       <ul className="price">
         {priceItem.map((item, i) => (
-          <li onClick={() => dispatch(priceSelect(i + 1))}>
+          <li key={item.price} onClick={() => dispatch(priceSelect(i + 1))}>
             {item.title} :{" "}
             {item.price
               .toString()
@@ -22,7 +22,7 @@ const PriceItem = React.memo(({ priceItem }) => {
       </ul>
     </>
   );
-});
+};
 
 const Product = () => {
   const router = useRouter();

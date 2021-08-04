@@ -36,7 +36,7 @@ const Slider = ({ item, breakPoint, multiSlider }) => {
         {item.map((slides) => {
           const { link, imgUrl, alt, title, text } = slides;
           return (
-            <SwiperSlide>
+            <SwiperSlide key={slides.title}>
               <div className="owl-treatments" onClick={() => routerMove(link)}>
                 <figure className="owl-treatments__img">
                   <img src={imgUrl} alt={alt} />
@@ -59,14 +59,14 @@ const Slider = ({ item, breakPoint, multiSlider }) => {
       {item.map((slides) => {
         const { cont, imgUrl, userName, joinCalss } = slides;
         return (
-          <SwiperSlide>
-            <div class="owl-theme-01__item">
-              <div class="owl-theme-01__item-text">
+          <SwiperSlide key={slides.joinCalss}>
+            <div className="owl-theme-01__item">
+              <div className="owl-theme-01__item-text">
                 <p>{cont}</p>
               </div>
-              <div class="owl-theme-01__item-user">
-                <h3 class="owl-theme-01__item-user-name">{userName}</h3>
-                <p class="owl-theme-01__item-user-subtitle">{joinCalss}</p>
+              <div className="owl-theme-01__item-user">
+                <h3 className="owl-theme-01__item-user-name">{userName}</h3>
+                <p className="owl-theme-01__item-user-subtitle">{joinCalss}</p>
               </div>
             </div>
           </SwiperSlide>

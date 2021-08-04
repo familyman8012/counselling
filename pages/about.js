@@ -4,7 +4,7 @@ import cn from "classnames";
 import SkillBar from "../container/about/SkillGraph";
 import Freebanner from "../components/Freebanner";
 
-function about() {
+function About() {
   const [baron, setBaron] = useState(false);
   const [videoPaly, setVideoPaly] = useState(false);
   useEffect(() => {
@@ -54,13 +54,15 @@ function about() {
                   </h3>
                   <div className="about-us-text-01">
                     <p>
-                      '진정한 행복'을 이끄는 행복한심리상담센터에서는 누구나
-                      행복을 배울 수 있음에 대한 과학적 근거와 데이터에 기반한
-                      긍정심리학을 바탕으로한 심리상담을 제공하고 있습니다.
+                      &#39;진정한 행복&#39;을 이끄는 행복한심리상담센터에서는
+                      누구나 행복을 배울 수 있음에 대한 과학적 근거와 데이터에
+                      기반한 긍정심리학을 바탕으로한 심리상담을 제공하고
+                      있습니다.
                       <br />
                       피아노연습이나, 운전과 같은 기술과 마찬가지로 꾸준히
                       연습하면 행복 역시 얻어질 수 있으며, 자신의 강점과 미덕을
-                      찾아 발휘한다면, '진정한 행복'이 깃든 삶을 살 수 있습니다.
+                      찾아 발휘한다면, &#39;진정한 행복&#39;이 깃든 삶을 살 수
+                      있습니다.
                       <br />
                       내담자가 행복해질때까지 행복한심리상담센터가 함께
                       하겠습니다.
@@ -107,7 +109,7 @@ function about() {
                   <iframe
                     className="video-block-video__frame"
                     src="https://www.youtube.com/embed/83Y5UvmNU00?rel=0"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
                   <div
                     className="video-block-close"
@@ -126,7 +128,7 @@ function about() {
             <div className="row">
               <div className="col-lg-12 text-center">
                 <p className="subtitle-01">
-                  내담자들이 '행복한심리상담센터' 를 신뢰하는 이유
+                  내담자들이 &#39;행복한심리상담센터&#39; 를 신뢰하는 이유
                 </p>
                 <h3 className="title-03 title-03--mr-03">
                   People
@@ -317,4 +319,4 @@ function about() {
   );
 }
 
-export default React.memo(about);
+export default React.memo(About);

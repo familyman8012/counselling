@@ -17,7 +17,10 @@ function Gnb() {
       {menuLists.map((menuItem) => {
         const { link, text } = menuItem;
         return (
-          <li className={router.pathname === link ? "active" : null}>
+          <li
+            key={menuItem.id}
+            className={router.pathname === link ? "active" : null}
+          >
             <Link href={link}>
               <a>{text}</a>
             </Link>

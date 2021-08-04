@@ -4,7 +4,7 @@ import useSwrFetch from "../hook/useSwrFetch";
 import Moment from "react-moment";
 import BbsList from "../components/bbs/BbsList";
 
-function bbslist() {
+function Counselling() {
   // crud
   const { swrdata, mutate } = useSwrFetch(`/api/post/post?category=상담사연`);
   return (
@@ -40,7 +40,7 @@ function bbslist() {
               https://seolleim.kr/notice/?idx=1628424&bmode=view
             </li>
           </ul>
-          <h2 class="tit_board">심리상담</h2>
+          <h2 className="tit_board">심리상담</h2>
           <BbsList swrdata={swrdata} category="상담사연" />
         </div>
       </div>
@@ -48,4 +48,4 @@ function bbslist() {
   );
 }
 
-export default bbslist;
+export default Counselling;

@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Moment from "react-moment";
 import axios from "../../node_modules/axios/index";
 
-function bbsdetail() {
+function Bbsdetail() {
   //useRouter
   const router = useRouter();
   const { p_id, category } = router.query;
@@ -24,7 +24,7 @@ function bbsdetail() {
     router.back();
   };
 
-  const deleteItem = (p_id) => {
+  const DeleteItem = (p_id) => {
     useSwrCrud("delete", `/api/post/post?id=${p_id}`, {}, swrdata, mutate);
     router.back();
   };
@@ -47,7 +47,7 @@ function bbsdetail() {
             <span className="modify" onClick={() => modifyItem(_id)}>
               수정
             </span>
-            <span className="delete" onClick={() => deleteItem(_id)}>
+            <span className="delete" onClick={() => DeleteItem(_id)}>
               지우기
             </span>
           </div>
@@ -66,4 +66,4 @@ function bbsdetail() {
   }
 }
 
-export default bbsdetail;
+export default Bbsdetail;

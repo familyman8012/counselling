@@ -29,8 +29,8 @@ function StateCounter() {
     },
   ];
   return stateCounters.map((stateCount) => (
-    <div class="col-sm-3 col-md-3 col-lg-3">
-      <div class="shortcode-counter counter-02">
+    <div className="col-sm-3 col-md-3 col-lg-3">
+      <div className="shortcode-counter counter-02">
         <CounterNumber key={stateCount.id} stateCount={stateCount} />
       </div>
     </div>

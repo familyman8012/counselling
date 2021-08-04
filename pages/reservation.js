@@ -129,19 +129,7 @@ const reservation = () => {
                 <div className="accordion-01__body">
                   <div className="accordion-01__text">
                     <p>
-                      <span>
-                        There are no guarantees with psychotherapy or
-                        psychiatry. We work in this field because we have seen
-                        people achieve tremendous gains form this kind of work.
-                        That doesn't mean that we can guarantee that every
-                        person will be helped, but if what you need is something
-                        that we can help with then we will use the best
-                        available treatments to do our utmost to help. The
-                        length of session depends on the situation. A regular
-                        Psychotherapy session will last 50 minutes. For an
-                        initial assessment with a Psychiatrist of Psychologist
-                        this could last 90 minutes...
-                      </span>
+                      <span></span>
                       <a className="accordion-01__btn" href="#">
                         view all
                       </a>

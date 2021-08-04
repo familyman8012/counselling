@@ -4,7 +4,7 @@ import useSwrFetch from "../hook/useSwrFetch";
 import Moment from "react-moment";
 import BbsList from "../components/bbs/BbsList";
 
-function bbslist() {
+function Notice() {
   // crud
   const { swrdata, mutate } = useSwrFetch(`/api/post/post?category=새로운소식`);
 
@@ -17,7 +17,7 @@ function bbslist() {
       <div className="wrap_cont">
         <div className="notice">
           <h3>[마인드 케어 최신 소식과 관련공지입니다.] </h3>
-          <h2 class="tit_board">새로운 소식</h2>
+          <h2 className="tit_board">새로운 소식</h2>
           <BbsList swrdata={swrdata} category="새로운소식" />
         </div>
       </div>
@@ -25,4 +25,4 @@ function bbslist() {
   );
 }
 
-export default bbslist;
+export default Notice;

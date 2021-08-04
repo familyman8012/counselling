@@ -4,16 +4,16 @@ import VisibilitySensor from "react-visibility-sensor";
 
 function CounterNumber({ stateCount }) {
   return (
-    <div class="counter-wrapper">
-      <div class="counter-content">
-        <div class="stat-count-wrapper">
+    <div className="counter-wrapper">
+      <div className="counter-content">
+        <div className="stat-count-wrapper">
           {stateCount.imgUrl && (
-            <figure class="stat-count-icon">
+            <figure className="stat-count-icon">
               <img src={stateCount.imgUrl} />
             </figure>
           )}
           <p
-            class="stat-count stat-count__dec"
+            className="stat-count stat-count__dec"
             data-count={stateCount.datacount}
           >
             <CountUp end={stateCount.datacount} redraw={false}>
@@ -24,9 +24,9 @@ function CounterNumber({ stateCount }) {
               )}
             </CountUp>
           </p>
-          <p class="counter-title">{stateCount.title}</p>
+          <p className="counter-title">{stateCount.title}</p>
         </div>
-        <div class="stat-temp"></div>
+        <div className="stat-temp"></div>
       </div>
     </div>
   );

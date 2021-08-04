@@ -20,7 +20,7 @@ function StateCounter() {
     },
   ];
   return stateCounters.map((stateCount) => (
-    <div class="shortcode-counter">
+    <div className="shortcode-counter">
       <CounterNumber key={stateCount.id} stateCount={stateCount} />
     </div>
   ));

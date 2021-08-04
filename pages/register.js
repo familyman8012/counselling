@@ -13,7 +13,7 @@ import {
 import SocialLogin from "../components/common/SocialLogin";
 import { Router } from "../node_modules/next/dist/client/router";
 
-export default function register({ providers, csrfToken }) {
+export default function Register({ providers, csrfToken }) {
   const {
     query: { callbackUrl },
   } = useRouter();
@@ -56,7 +56,7 @@ export default function register({ providers, csrfToken }) {
           name="name"
           type="text"
           placeholder="홍길동"
-          autocomplete="off"
+          autoComplete="off"
           ref={register({
             required: true,
             pattern: /^[가-힣]{2,7}$/,
@@ -73,7 +73,7 @@ export default function register({ providers, csrfToken }) {
           name="email"
           type="email"
           placeholder="example@example.com"
-          autocomplete="off"
+          autoComplete="off"
           ref={register({
             required: true,
             pattern:
@@ -86,7 +86,7 @@ export default function register({ providers, csrfToken }) {
           name="phone"
           type="number"
           placeholder="01012345678"
-          autocomplete="off"
+          autoComplete="off"
           ref={register({
             required: true,
             pattern: /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g,
@@ -102,7 +102,7 @@ export default function register({ providers, csrfToken }) {
         <input
           name="userpwd"
           type="password"
-          autocomplete="off"
+          autoComplete="off"
           placeholder="영문 소문자 / 숫자 / 특수기호 중 2가지 이상 조합 8~16자"
           ref={register({
             required: true,
@@ -123,7 +123,7 @@ export default function register({ providers, csrfToken }) {
         <input
           name="userpwd_confirm"
           type="password"
-          autocomplete="off"
+          autoComplete="off"
           placeholder="비밀번호 확인을 위해 입력해주세요."
           ref={register({
             required: true,

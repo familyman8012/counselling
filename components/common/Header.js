@@ -21,7 +21,7 @@ function Header() {
               </Link>
             </div>
             <div className="col-sm-8 col-md-8 col-lg-8 text-xs-center text-right login-wrap">
-              <div class="login_box">
+              <div className="login_box">
                 {!session && (
                   <>
                     <Link href="/signin">

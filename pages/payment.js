@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useSession } from "next-auth/client";
 import axios from "axios";
 
-function payment() {
+function Payment() {
   const router = useRouter();
   const RouterCheck = useMemo(
     () => Object.keys(router?.query).length === 0,
@@ -232,4 +232,4 @@ function payment() {
   );
 }
 
-export default payment;
+export default Payment;

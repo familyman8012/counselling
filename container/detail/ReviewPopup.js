@@ -72,16 +72,16 @@ function ReviewPopup({
       <div className="pop_review_write">
         <h1 className="tit">
           상담리뷰 작성
-          <span class="btn_close" onClick={setCloseModal}>
-            <span class="blind">닫기</span>
+          <span className="btn_close" onClick={setCloseModal}>
+            <span className="blind">닫기</span>
           </span>
         </h1>
         <div className="wrap_pop_cont">
           <div className="box_category">
-            <span class="thumb">
+            <span className="thumb">
               <img src={detailInfo[0].imgUrl} alt={detailInfo[0].alt} />
             </span>
-            <h2 class="txt">{detailInfo[0].title}</h2>
+            <h2 className="txt">{detailInfo[0].title}</h2>
           </div>
           <div className="box_rate">
             <h3>상담 어떠셨나요?</h3>
